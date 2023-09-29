@@ -1,5 +1,11 @@
 body {
     font-family: Arial, sans-serif;
+    /* text-align: center; */
+    background-color: #F5F4EF;
+    color: #254D52;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -9,13 +15,14 @@ form {
 }
 
 input[type="text"], input[type="password"] {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 5px 0;
+    background-color: #F5F4EF;
 }
 
 input[type="submit"] {
-    background-color: #007BFF;
+    background-color: #254D52;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -23,7 +30,7 @@ input[type="submit"] {
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 5px 0;
 }
@@ -32,3 +39,38 @@ input[type="number"] {
     font-weight: bold;
 }
 
+#patient_info, #patient_stats {
+    background-color: #1CB6B5;
+    padding-right: 54px;
+    padding: 30px;
+    color: #F5F4EF;
+    text-align: center;
+}
+
+.top {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.results {
+    text-align: center;
+    background-color: #1CB6B5;
+    width: fit-content;
+    margin: auto;
+    padding: 30px;
+    color: #F5F4EF;
+}

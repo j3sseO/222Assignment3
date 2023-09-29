@@ -25,18 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel="stylesheet" href="styles.css">
         <title>SOFA Score Calculator</title>
     </head>
-
     <body>
-        <h1>SOFA Score Calculator</h1>
-        <p>Patient Details:</p>
-        <p>NHI Number: <?php echo $patientNHI; ?></p>
-        <p>Surname: <?php echo $patientSurname; ?></p>
-        <p>First Name: <?php echo $patientFirstname; ?></p>
-
-        <form action="result.php" method="POST">
+        <div class="container">
+            <div class="top">
+            <h1>SOFA Score Calculator</h1>
+            <p><?php echo $patientFirstname; ?> <?php echo $patientSurname; ?></p>
+            <p><?php echo $patientNHI; ?></p>
+            </div>
+        </div>
+        <form id="patient_stats" action="result.php" method="POST">
             <h2>Enter SOFA Score Components</h2>
 
-            <label for="respitory_numeric">Respitory Numeric (<span class="bold">PaO2/FiO2 [mmHg (kPa)]</span>):</label>
+            <label for="respitory_numeric">Respiratory Numeric (<span class="bold">PaO2/FiO2 [mmHg (kPa)]</span>):</label>
             <input type="number" id="respiratory_numeric" name="respiratory_numeric" required><br><br>
 
             <label>Mechanical Ventilation:</label>
@@ -72,6 +72,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <input type="submit" value="Calculate SOFA Score">
         </form>
-
     </body>
 </html>
